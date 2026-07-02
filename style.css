@@ -5,7 +5,8 @@
   --border: #34343c;      
   --text: #e8e6e3;       
   --muted: #8f8e98;       
-  --accent: #C4855A;      
+  --accent: #C4855A;    
+}  
   * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -45,4 +46,3 @@ header h1 { font-size: 18px; color: var(--accent); }
   color: var(--muted);
   margin-bottom: 12px;
 }
-}                       
