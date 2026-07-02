@@ -1,0 +1,48 @@
+/* Option A */          /* Option B */
+:root {                 
+  --bg: #1a1a1f;          
+  --panel: #232329;       
+  --border: #34343c;      
+  --text: #e8e6e3;       
+  --muted: #8f8e98;       
+  --accent: #C4855A;      
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  padding: 14px 24px;
+  background: var(--panel);
+  border-bottom: 1px solid var(--border);
+}
+
+header h1 { font-size: 18px; color: var(--accent); }
+
+.workspace {
+  flex: 1;                                /* fill everything below the header */
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr;   /* fixed sidebar, two equal panels */
+}
+
+.workspace section {
+  background: var(--panel);
+  border-right: 1px solid var(--border);
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.workspace section h2 {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+}                       
